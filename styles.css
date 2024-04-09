@@ -113,7 +113,7 @@ footer {
 #aside-window{float: right;
 width: 50%;
 height: 200vw; 
-background-color: rgb(34, 34, 34);
+background-color: rgba(34, 34, 34, 0.023);
 z-index: 1;
 }
 
@@ -132,6 +132,7 @@ margin:8px;}
 aside h1 {
     margin: 8px;
 }
+#theFirstImage{opacity: .8;}
 
 .words1{margin-left: 15px; }
 
@@ -174,7 +175,7 @@ aside h1 {
 
         /* ----------------------------big animation----------- */
         #canvas1 {
-            position: relative;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
