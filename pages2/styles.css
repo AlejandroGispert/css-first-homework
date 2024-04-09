@@ -1,0 +1,120 @@
+:root {
+
+  --my-background: #ffc300;
+  --my-background-2: #12296c;
+}
+
+* {margin: 0; padding: 0}
+
+.nav-box {
+  margin-top:20px
+}
+
+navbar { width: 100%; height: 8%;
+
+  position: fixed;
+top:0;
+left: 0;
+background-color: var(--my-background);
+border-bottom: solid 2px black;
+text-align: center;
+z-index: 1 
+}
+
+navbar a {
+ 
+ 
+  margin: 4%;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: var(--my-background-2);
+}
+
+navbar a:hover {
+ color:white;
+  background-color: var(--my-background-2);
+}
+h1, h2 {text-align: center;
+font-family: anton; 
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
+.circle {position: absolute; top:40%;left: 40%;background-color: rgba(255,255,255,0.5);width: 48%;
+height:60%; border-radius:50%;
+z-index: -1}
+
+
+h1 {
+  font-size: 50px;
+padding-top: 20%;
+
+
+}
+
+h2 {
+font-size: 25px;
+padding-top: 20%;
+background-color: white;}
+
+#welcome-section{
+  background: linear-gradient(yellow,white);
+padding-top: 20%;
+width: 100%;
+height: 100vh;
+}
+
+.project-tile {
+  border-bottom: solid 3px black;
+  background: linear-gradient(white,yellow);
+padding-top: 20%;
+width: 100%;
+height: 100%;
+position: relative;
+  
+ 
+ 
+}
+
+.project-grid {
+  text-align: center;
+  
+}
+
+
+
+
+.images{width:300px; margin: 5%; 
+transition: all 300ms ease-in-out;}
+
+.images:hover  {transform: scale(1.2) }
+
+footer {
+  
+
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    
+    background-color: gray;
+}
+footer a {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #welcome-section{
+  background: linear-gradient(var(--my-background),white);
+padding-top: 20%;
+width: 100%;
+height: 100vh;
+}
+ 
+}

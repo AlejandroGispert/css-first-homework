@@ -1,4 +1,4 @@
-*{}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -20,13 +20,22 @@ header {
 
 header nav, header h1{position:fixed;}
 
+header h1{z-index: -1;opacity: .5;}
 nav a {
     
-    transition: all 0.5s ease-out;
+    transition: all .5s ease-in-out 0s;
 }
 nav a:active{
-    transform: translateX(0);
+    transition: all .5s ease-in-out 0s;
+    color: aqua;
+    
 }
+nav a:hover{
+   
+    color: aqua;
+    font-size: 150%;
+}
+
 .alejandro-logo{width: 100%;
     height: 100%;}
 
@@ -92,24 +101,30 @@ section {
     margin-bottom: 10px;
 }
 
+ .react:hover{color: #1179d4;}
+.angular:hover{color: rgb(246, 13, 32);}
+.vue:hover{color: rgb(53, 238, 158);}
+.node:hover{color: rgb(154, 245, 177);}
+.php:hover{color: rgb(110, 173, 229);}
+.js:hover{color: rgb(234, 236, 88);}
 
 .soMe-container{text-align: center;}
 .soMeLinks{margin: 20px;}
 
 footer {
-    background-color: #333;
+    background-color: #3333339b;
     color: white;
     text-align: center;
     padding: 1px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 8%;
+    height: 10%;
     
     
 
 }
-
+.soMeLinks a{ color: darkcyan; }
 #aside-window{float: right;
 width: 50%;
 height: 200vw; 
@@ -133,6 +148,31 @@ aside h1 {
     margin: 8px;
 }
 #theFirstImage{opacity: .8;}
+
+#theSecondImage{opacity: .7; animation-name: wheel;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+width: 100%;
+
+}
+@keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+ 
+
+ #theSecondImage:hover {opacity: 1;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+
+ }
+
+ .iframesRow {display: flex;}
+ 
 
 .words1{margin-left: 15px; }
 
@@ -186,4 +226,11 @@ aside h1 {
             color: white;
           }
 
-          
+           /* ---------------------------responsive----------- */
+
+           @media only screen and (max-width: 720px){
+            header nav, header h1{display: none;}
+            .iframesRow {display: none}
+            .item1 {width:90%;}
+            .item2 {width:90%;}
+           }
