@@ -142,11 +142,16 @@ margin:8px;}
 .framework-icons i{width: 50px;font-size: 36px}
 
 
-#last-btn {margin-top: 10%;}
+.buttons {margin-top: 10%; border-radius: 5px; padding: 8px; background-color: #FC9366;border-color: #049295;}
 
 aside h1 {
     margin: 8px;
 }
+
+.green{
+    color: #049295;
+}
+
 #theFirstImage{opacity: .8;}
 
 #theSecondImage{opacity: .7; animation-name: wheel;
