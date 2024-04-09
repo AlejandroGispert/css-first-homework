@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#survey">Porfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -37,53 +37,38 @@
                       </div>
                     </div>
         </header>
+       
     <main>
         <section id="description-section">
-            <h1>Book a 15min Consultation with me</h1>
+            <h1>Book a 15min Consultation</h1>
             <h1>About Me</h1>
             <p>I'm a passionate developer with experience in web development, data analysis, and machine learning.</p>
         </section>
 
         <section id="skills-section">
-            <h1>skills</h1>
-            <div class="skills">
-                <h2>'Skills'</h2>
-              
+            
+            <legend>
+                <h1>My skills</h1>
+            <div class="framework-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-angular"></i>
+                <i class="fab fa-vuejs"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-php"></i>
+                <i class="fab fa-js"></i> <!-- For Laravel -->
+                
             </div>
+        </legend>
+            <button id="last-btn">download cv</button>
             <!-- Add more projects as needed -->
         </section>
 
         
-        <section id="projects-section">
-            <h1>Portfolio-section</h1>
-            <div class="project">
-                <h2>Project 1</h2>
-                <p>Description of Project 1.</p>
-                <button onclick="showProjectDetails('project1')">More Details</button>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-
-            <div class="soMeLinks">
-           
-                <a href="https://www.twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         
-            </div>
-        </section>
     </main>
+    <canvas id="canvas1"></canvas>
+    
+
 
 <aside id="aside-window">
 
@@ -91,7 +76,7 @@
     <img src="./img/webdeveloper.jpeg" alt="webpage" width="100%" height="auto">
 <div class="words1">
     <span class="word" data-word="Portfolio" style="--word-index: 0;">
-    <span class="char" data-char="P" style="--char-index: 0;">P</span>
+    <span id="letter-p"  class="char" data-char="P" style="--char-index: 0;">P</span>
     <span class="char" data-char="o" style="--char-index: 1;">o</span>
     <span class="char" data-char="r" style="--char-index: 2;">r</span>
     <span class="char" data-char="t" style="--char-index: 3;">t</span>
@@ -108,15 +93,44 @@
     <h1>more</h1>
     <div class="dividers"></div>
     <img src="./img/webdeveloper.jpeg" alt="webpage" width="100%" height="auto">
-    <h1>more</h1>
+    <h1>Contact Me</h1>
     <div class="dividers"></div>
+
+    <section id="contact">
+       
+        <form id="form">
+            <div class="item1"><label  for="name">Name:</label>
+                <input  type="text" id="name" name="name"></div>
+            
+                <div class="item2">   <label  for="email">Email:</label>
+                    <input  type="email" id="email" name="email"></div>
+         
+                    <div class="item3"> <label  for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea></div>
+           
+            <button class="item4" type="submit">Send</button>
+        </form>
+</section>
 </aside>
 
 
     <footer>
         <p>&copy; 2024 Alejandro Gispert. All rights reserved.</p>
+        <div class="soMe-container">
+        
+            <div class="soMeLinks">
+           
+                <a href="https://www.twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        
+            </div>
+        </div>
     </footer>
 
+    
+
     <script  src="./script.js"></script>
+    <script  src="./script2.js"></script>
 </body>
 </html>

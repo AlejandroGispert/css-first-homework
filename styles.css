@@ -20,6 +20,13 @@ header {
 
 header nav, header h1{position:fixed;}
 
+nav a {
+    
+    transition: all 0.5s ease-out;
+}
+nav a:active{
+    transform: translateX(0);
+}
 .alejandro-logo{width: 100%;
     height: 100%;}
 
@@ -27,10 +34,11 @@ header nav, header h1{position:fixed;}
 
 
 .svg1-container{
-    width: 50%;
+    width: 49%;
     height: auto;
     position: fixed;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.382);
+    border-radius: 30px;
     margin-top: 4%;
    
 }
@@ -66,10 +74,11 @@ main {
     box-sizing: border-box;
  
     padding: 20px;
-    max-width: 50%;
+    max-width: 49%;
     float: left;
    position: fixed;
-   background-color: black;
+   background-color: rgba(0, 0, 0, 0.323);
+  
 }
 
 section {
@@ -83,14 +92,22 @@ section {
     margin-bottom: 10px;
 }
 
+
+.soMe-container{text-align: center;}
+.soMeLinks{margin: 20px;}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 1px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 8%;
+    
+    
+
 }
 
 #aside-window{float: right;
@@ -105,10 +122,67 @@ z-index: 1;
 background-color: #333;
 margin:8px;}
 
+
+.framework-icons{padding: 20px}
+.framework-icons i{width: 50px;font-size: 36px}
+
+
+#last-btn {margin-top: 10%;}
+
 aside h1 {
     margin: 8px;
 }
 
 .words1{margin-left: 15px; }
 
-#survey{height: 800px}
+#survey{height: 800px; }
+
+#contact {text-align: center;height: 400px; padding: 10%;background-color: black}
+#form {width:100%;height:100%; }
+
+.item1 {margin: 40px auto; }
+.item2 {margin: 40px auto;}
+.item3 {margin: 40px auto; }
+
+.item3 label {display: block;}
+
+/* ---------animation-------- */
+
+
+
+
+
+
+    .char{
+        font-size: 50px;
+        animation-name: letter;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes letter {
+        
+       0% {
+       color: white;}
+        50%{color:yellow;}
+       100% {    color: white;
+        }
+        }
+
+
+
+        /* ----------------------------big animation----------- */
+        #canvas1 {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: radial-gradient(#8cff92, #56ff40); */
+            background-color: rgba(7, 7, 7, 0.243);
+            z-index: -2;
+            color: white;
+          }
+
+          
