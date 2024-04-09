@@ -142,7 +142,7 @@ margin:8px;}
 .framework-icons i{width: 50px;font-size: 36px}
 
 
-.buttons {margin-top: 10%; border-radius: 5px; padding: 8px; background-color: #FC9366;border-color: #049295;}
+.buttons {margin-top: 10%; border-radius: 50px; padding: 10px; background-color: #FC9366;border:none; }
 
 aside h1 {
     margin: 8px;
