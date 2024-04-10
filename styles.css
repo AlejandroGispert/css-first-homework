@@ -1,11 +1,12 @@
 
 
 body {
-    font-family: Fira Sans, sans-serif;
+    font-family: Fira Mono, sans-serif;
     margin: 5px;
     padding: 0;
    color: whitesmoke;
    background-color: black;
+   
 }
 
 header {
@@ -86,12 +87,12 @@ nav ul li a {
 main {
     box-sizing: border-box;
  
-    padding: 20px;
+    padding: 5%;
     max-width: 49%;
     float: left;
    position: fixed;
    background-color: rgba(0, 0, 0, 0.323);
-  
+ 
 }
 
 section {
@@ -151,12 +152,19 @@ margin:8px;}
   
     color:white; background-color: black;
  }
+
+ /* --------------------------aside */
 aside h1 {
     margin: 8px;
 }
+#description-sectionII{
+    margin: 25% 0;
+}
+
 
 .green{
     color: #049295;
+    
 }
 
 .secondH1{margin: 8% 0;}
@@ -213,13 +221,15 @@ width: 100%;
 .green-letter{color: black; background-color: #1bf01b;}
 /* ---------animation-------- */
 
+.typeText, .typeTextII{  overflow: hidden; 
+    border-right: .15em solid #1bf01b; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; 
+    letter-spacing: .01em; /* Adjust as needed */
+}
 
-#typeText{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #1bf01b; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .01em; /* Adjust as needed */
+.typeText{
+   
     animation:  typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;}
 
@@ -233,6 +243,18 @@ width: 100%;
     50% { border-color: #1bf01b; }
   }
 
+  .typeTextII{
+   
+    animation:  typingII 6.5s steps(40, end),
+    blink-caret .75s step-end infinite;}
+
+/* The typing effect */
+@keyframes typingII {
+    from { width: 0 }
+    50% { width: 0 }
+    to { width: 100% }
+  }
+
 
     .char{
         font-size: 50px;
@@ -240,10 +262,7 @@ width: 100%;
     }
     
  
-
-        .oo {background-color: #1bf01b; color:black}
-
-        /* ----------------------------big animation----------- */
+        /* ----------------------------background animation----------- */
         #canvas1 {
             position: fixed;
             top: 0;
@@ -267,4 +286,6 @@ width: 100%;
 
             .one {display: none; }
             h1 {font-size: 20px; font-weight: bold}
+            .typeText{font-size: 15px;}
+            
            }

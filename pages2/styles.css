@@ -1,6 +1,6 @@
 :root {
 
-  --my-background: #ffc300;
+  --my-background: #de8c48;
   --my-background-2: #12296c;
 }
 
@@ -59,7 +59,7 @@ padding-top: 20%;
 background-color: white;}
 
 #welcome-section{
-  background: linear-gradient(yellow,white);
+  background: linear-gradient(rgb(255, 204, 0),white);
 padding-top: 20%;
 width: 100%;
 height: 100vh;
