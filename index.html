@@ -1,153 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alejandro Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-       
-        <nav>
-            <ul>
-                <li><a href="#theFirstImage">Home</a></li>
-                <li><a href="#survey">Porfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#theFirstImage">Home</a></li>
+          <li><a href="#survey">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <h1>my Webpage</h1>
-        <div class="svgs">
-<div class="svg1-container">
-        <svg id="svg1" class="alejandro-logo"  viewBox="6 1 100 20"  fill="none" stroke="white" stroke-width=".5"
-             height="30" width="200" xmlns="http://www.w3.org/2000/svg">
-                <text id="textAle" x="10" y="15" >Alejandro </text>
-              </svg>
-              </div>
-              <div class="svg2-container">
-                <svg id="svg2" class="alejandro-logo"  viewBox="0 1 100 20"  fill="none" stroke="white" stroke-width=".5"
-                     height="30" width="200" xmlns="http://www.w3.org/2000/svg">
-                        <text id="textAle" x="10" y="15" > Gispert</text>
-                      </svg>
-                      </div>
-                    </div>
-        </header>
-       
+      <h1>my Webpage</h1>
+      <div class="svgs">
+        <div class="svg1-container">
+          <svg
+            id="svg1"
+            class="alejandro-logo"
+            viewBox="6 1 100 20"
+            fill="none"
+            stroke="white"
+            stroke-width=".5"
+            height="30"
+            width="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text id="textAle" x="10" y="15">Alejandro</text>
+          </svg>
+        </div>
+        <div class="svg2-container">
+          <svg
+            id="svg2"
+            class="alejandro-logo"
+            viewBox="0 1 100 20"
+            fill="none"
+            stroke="white"
+            stroke-width=".5"
+            height="30"
+            width="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text id="textAle" x="10" y="15">Gispert</text>
+          </svg>
+        </div>
+      </div>
+    </header>
+
     <main>
-        <section id="description-section">
-            
-            <h1 class="green">About Me</h1>
-            <p class="typeText">I'm a passionate developer </p>
-            <p class="typeText">with experience in front-end web development</p>
-            <p class="typeTextII">and system automatization solutions.</p>
-        </section>
+      <section id="description-section">
+        <h1 class="green">About Me</h1>
+        <p class="typeText">I'm a passionate developer</p>
+        <p class="typeText">with experience in front-end web development</p>
+        <p class="typeTextII">and system automatization solutions.</p>
+      </section>
 
-        <section id="skills-section">
-            
-            <legend>
-                <h1 class="green">My skills</h1>
-            <div class="framework-icons">
-                <i class="fab fa-react react"></i>
-                <i class="fab fa-angular angular"></i>
-                <i class="fab fa-vuejs vue"></i>
-                <i class="fab fa-node node"></i>
-                <i class="fab fa-php php"></i>
-                <i class="fab fa-js js"></i> <!-- For Laravel -->
-                
-            </div>
+      <section id="skills-section">
+        <legend>
+          <h1 class="green">My skills</h1>
+          <div class="framework-icons">
+            <i class="fab fa-react react"></i>
+            <i class="fab fa-angular angular"></i>
+            <i class="fab fa-vuejs vue"></i>
+            <i class="fab fa-node node"></i>
+            <i class="fab fa-php php"></i>
+            <i class="fab fa-js js"></i>
+
+            <!-- For Laravel -->
+          </div>
         </legend>
-            <button id="last-btn" class="buttons" onclick="alert('This is not functional right now.')">Download CV</button>
-            <!-- Add more projects as needed -->
-        </section>
-
-        
-        
+        <button
+          id="last-btn"
+          class="buttons"
+          onclick="const link=document.createElement('a');link.href='./Alejandro_CV_(2024).pdf';link.download='Alejandro_CV_(2024).pdf';link.click();"
+        >
+          Download CV
+        </button>
+        <!-- Add more projects as needed -->
+      </section>
     </main>
     <canvas id="canvas1"></canvas>
-    
 
+    <aside id="aside-window">
+      <section id="description-sectionII">
+        <h1 class="green secondH1">Need help with a project?</h1>
+        <p>Book a free 15 min consultation</p>
+        <a
+          class="buttons anchor"
+          href="https://calendly.com/alejandrobusiness2022/30min"
+          target="_blank"
+          >Book Now</a
+        >
+      </section>
 
-<aside id="aside-window">
-    <section id="description-sectionII">
-    <h1 class="green secondH1">Need help with a project?</h1>
-            <p>Book a free 15 min consultation</p>
-            <a class="buttons anchor" href="https://calendly.com/alejandrobusiness2022/30min" target="_blank">Book Now</a>
-</section>
+      <!-- <img
+        id="theFirstImage"
+        src="./img/webdeveloper.jpeg"
+        alt="webpage"
+        width="100%"
+        height="auto"
+      /> -->
+      <div class="dividers"></div>
+      <div class="words1">
+        <h1 class="green">Presentations</h1>
+      </div>
 
-    <img  id="theFirstImage" src="./img/webdeveloper.jpeg" alt="webpage" width="100%" height="auto">
-    <div class="dividers"></div>
-<div class="words1">
-    <h1 class="green">P<span class="green-letter">o</span>rtf<span class="green-letter">o</span>li<span class="green-letter">o</span></h1>
-   
-</span>
- </div>
-   
-    <div class="iframesRow">
-    <iframe id="survey" src="./pages/survey.html" width="50%" height="auto"></iframe>
-    <iframe id="sol" src="./pages2/sol.html" width="50%" height="auto"></iframe>
-</div>
-<div class="dividers"></div>
-    <h1 class="green">React Specialty</h1>
-    
-    <img id="theSecondImage" src="./img/react2.png" alt="webpage" width="100%" height="auto">
-    <div class="dividers"></div>
-    <h1 class="green">Let's c<span class="green-letter">o</span>nnect!</h1>
-    
+      <div class="iframesRow">
+        <div
+          style="
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 62.5%;
+          "
+        >
+          <iframe
+            src="https://www.loom.com/embed/3b55918fc74d49099f9fb3d5b3b803d7?sid=6755b290-fdaf-491d-a2d7-423b67c58a65"
+            frameborder="0"
+            allow="fullscreen; web-share"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          >
+          </iframe>
+        </div>
+      </div>
 
-    
-    <section id="contact">
-       
-        <form id="form">
-            <div class="item1"><label  for="name">Name:</label>
-                <input  type="text" id="name" name="name"></div>
-            
-                <div class="item2">   <label  for="email">Email:</label>
-                    <input  type="email" id="email" name="email"></div>
-         
-                    <div class="item3"> <label  for="message">Message:</label>
-                        <textarea id="message" name="message"></textarea></div>
-           
-            <button class="item4 buttons" onclick="alert('No contact with server')" type="submit">Send</button>
-            <div class="soMe-container">
-        
-                <div class="soMeLinks one">
-               
-                    <a href="https://www.twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com/AlejandroGispert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            
-                </div>
+      <div style="position: relative; padding-bottom: 62.5%; height: 0">
+        <iframe
+          src="https://www.loom.com/embed/1ac16b5f71884014b23144645ad48985?sid=4d4b8af7-06f0-4648-bd22-6f7ff4bb2508"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        ></iframe>
+      </div>
+      <div
+        style="position: relative; padding-bottom: 56.975505857295%; height: 0"
+      >
+        <iframe
+          src="https://www.loom.com/embed/1162c2f8bf934a1b9404e4c58d6b0979?sid=824bff17-aa89-4450-b561-943c8d552413"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        ></iframe>
+      </div>
+      <div
+        style="
+          position: relative;
+          padding-bottom: 44.99999999999999%;
+          height: 0;
+        "
+      >
+        <iframe
+          src="https://www.loom.com/embed/3a82d4fb805248c284ee383b31721e04?sid=3abf0b87-a3ea-4a28-9bc1-db93234712bf"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        ></iframe>
+      </div>
+      <div class="dividers"></div>
+      <!-- <h1 class="green">React Specialty</h1>
+
+      <img
+        id="theSecondImage"
+        src="./img/react2.png"
+        alt="webpage"
+        width="100%"
+        height="auto"
+      /> -->
+      <div class="dividers"></div>
+      <h1 class="green">Let's connect!</h1>
+
+      <section id="contact">
+        <!-- <form id="form">
+          <div class="item1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="item2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="item3">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <button
+            class="item4 buttons"
+            onclick="alert('No contact with server')"
+            type="submit"
+          >
+            Send
+          </button> -->
+          <div class="soMe-container">
+            <div class="soMeLinks one">
+              <a
+                href="https://www.linkedin.com/in/alejandro-gispert/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+              >
+              <a href="https://github.com/AlejandroGispert" target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
             </div>
+          </div>
         </form>
-        
-</section>
-</aside>
-
+      </section>
+    </aside>
 
     <footer>
-        <p>&copy; 2024 Alejandro Gispert. All rights reserved.</p>
-        <div class="soMe-container">
-        
-            <div class="soMeLinks">
-           
-                <a href="https://www.twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                <a href="https://github.com/AlejandroGispert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        
-            </div>
+      <p>&copy; 2024 Alejandro Gispert. All rights reserved.</p>
+      <div class="soMe-container">
+        <div class="soMeLinks">
+          <!-- <a href="https://www.twitter.com/yourusername" target="_blank"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          > -->
+          <a
+            href="https://www.linkedin.com/in/alejandro-gispert/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+          >
+          <a href="https://github.com/AlejandroGispert" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
         </div>
+      </div>
     </footer>
 
-    
-
-    <script  src="./script.js"></script>
-    <script  src="./script2.js"></script>
-</body>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+  </body>
 </html>
